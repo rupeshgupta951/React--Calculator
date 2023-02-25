@@ -1,0 +1,146 @@
+.container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  border-radius: 20px;
+  width: 30%;
+  height: 80vh;
+  border: 2px solid rgb(0, 183, 193);
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  box-shadow: rgb(14, 243, 255) 0px 22px 70px 4px;
+  animation: popup 4s;
+  /* box-shadow: rgb(4, 119, 123) 0px 30px 60px -12px inset, rgba(4, 119, 123) 0px 18px 36px -18px inset; */
+}
+#eval {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  width: 100%;
+  justify-content: space-evenly;
+}
+input {
+  width: 92%;
+  height: 3em;
+  background: transparent;
+  color: rgb(3, 247, 255);
+  font-size: 30px;
+  border: 2px solid rgb(3, 247, 255);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: rgb(14, 243, 255) 0px 22px 70px 4px;
+  padding-left: 10px;
+}
+
+::placeholder{
+  color: #02b2b2;
+  filter: blur();
+}
+.buttons {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgb(3, 247, 255);
+  font-weight: bolder;
+  height: 5em;
+  width: 5em;
+  border: 2px solid rgb(3, 247, 255);
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.buttons:hover {
+  background-color: #02b2b2;
+  color: black;
+  cursor: pointer;
+  box-shadow: rgb(14, 243, 255) 0px 22px 70px 4px;
+  transition: linear 0.3s;
+}
+
+@keyframes popup {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .buttons {
+    height: 4em;
+    width: 4em;
+    font-size: 20px;
+  }
+  .container {
+    width: 30%;
+    height: 70vh;
+   
+  }
+}
+
+
+@media (max-width: 900px) {
+  
+  .container {
+    width: 50%;
+    height: 500px;
+   
+  }
+}
+
+@media (max-width: 450px) {
+    .buttons {
+      height: 4em;
+      width: 4em;
+      font-size: 15px;
+    }
+    .container {
+      width: 80%;
+      height: 450px;
+     
+    }
+    input {
+        width: 85%;
+        height: 60px;
+        font-size: large;
+    }
+  }
+@media (max-width: 400px) {
+    .buttons {
+      height: 4em;
+      width: 4em;
+      font-size: 15px;
+    }
+    .container {
+      width: 90%;
+      height: 400px;
+     
+    }
+    input {
+        width: 85%;
+        height: 60px;
+    }
+  }
+
+@media (max-width: 330px) {
+    .buttons {
+      height: 4em;
+      width: 4em;
+      font-size: 10px;
+    }
+    .container {
+        margin-top: 30px;
+      width: 80%;
+      height: 350px;
+     
+    }
+    input {
+        width: 80%;
+        height: 30px;
+    }
+  }
